@@ -1,0 +1,49 @@
+#Ani {
+  animation-name: startAni;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-delay: 0s;
+}
+#AniBack {
+  animation-name: startAni;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-delay: 0s;
+}
+
+@keyframes startAni {
+  0% {
+    
+  }
+  50% {
+    content: "front-end developer";
+    font-size: 300px;
+    font-color: black;
+    z-index:8;
+  }
+  100% {
+    font-size: 20vw;
+  }
+}
+@keyframes AniBack {
+    0% {
+      background-color: red;
+      width : 100vw;
+      height : 100vw;
+      z-index:7;
+    }
+    50% {
+    background-color: blue;
+    width : 100vw;
+    height : 100vw;
+    z-index:7;
+    }
+    100% {
+      z-index:7;
+    }
+}
+  

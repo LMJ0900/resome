@@ -6,10 +6,13 @@ import Circle from "@/components/home/circle";
 import Image from "next/image";
 import Circle1 from "@/components/home/circle1";
 import Education from "@/components/home/education";
-
+import "@/styles/resome.css"
 export default function Home() {
   return (
     <>
+    <div className="AniBack" id="AniBack">
+    <div className="startAni" id="Ani"></div>
+    </div>
       <div className="flex flex-row">
         <Sidebar />
         <div className="flex flex-col w-[80vw]">
