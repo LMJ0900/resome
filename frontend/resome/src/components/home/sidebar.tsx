@@ -26,7 +26,7 @@ export default function Sidebar() {
                         <li className="mt-[5vh]">
                             <div className="emailInfo flex flex-col justify-center items-center">
                                 <img className="" src="/images/git.png" alt="핸드폰" />
-                                <h2 className="lg:text-xl md:text-base sm:text-sm">https://github.com/LMJ0900</h2>
+                                <a href="https://github.com/LMJ0900" className="lg:text-xl md:text-base sm:text-sm">https://github.com/LMJ0900</a>
                             </div>
                         </li>
                         <li></li>
