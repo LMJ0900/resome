@@ -14,6 +14,14 @@ export function GgunCom({ src, name, text }: any) {
         </div>
     </>)
 }
+export function GgunpageCom() {
+    return (<>
+       <div className="flex justify-center flex-col gap-[2rem]">
+                    {ggunData.map((item) => <GgunCom name={item.name} text={item.text} src={item.src}></GgunCom>)}
+                 </div>
+
+    </>)
+}
 
 export default function Ggun() {
 
@@ -30,11 +38,10 @@ export default function Ggun() {
             <div className="flex justify-center gap-[2rem]">
                 <button onClick={handlePage} className="font-bold text-[2rem]">page</button>
                 <button onClick={handleApi} className="font-bold text-[2rem]">api명세서</button>
+                <a href="ggun/login" className="font-bold text-[2rem]">ggun으로 이동</a>
             </div>
             {page === "page" ?
-                <div className="flex justify-center flex-col gap-[2rem]">
-                    {ggunData.map((item) => <GgunCom name={item.name} text={item.text} src={item.src}></GgunCom>)}
-                </div> : page === "Api" ? <img className="w-[800rem] h-[70rem]" src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
+                <GgunpageCom/> : page === "Api" ? <img className="w-[800rem] h-[70rem]" src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
 
         </>
     )

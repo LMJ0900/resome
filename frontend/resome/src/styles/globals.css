@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "font1";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaBatang.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font2";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ggunFont1";
+  src: url("/fonts/꾼폰트.ttf");
+}
+@font-face {
+  font-family: "ggunFont2";
+  src: url("/fonts/꾼폰트2.ttf");
+}
+@font-face {
+  font-family: "ggunFont3";
+  src: url("/fonts/꾼폰트3.ttf");
+}
+
+:root {
+    --color-pebble-1 : #433E49;
+    --color-pebble-2 : #928490;
+    --color-pebble-3 : #DBC1AD;
+    --color-pebble-4 : #F3E8EB;
+    --color-pebble-hover : #872642;
+}
