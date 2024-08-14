@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
 
 
@@ -7,7 +9,7 @@ export default function Header() {
             <a href="" className="">Lee,Minjae <br /> <h2 className="text-[2rem] pl-[0.9vw]"> front-end developer
             </h2> </a>
             <ul className="ml-[5vw] text-[1.5vw] font-semibold flex gap-[3vw]">
-                <li><a href="/pages/TeamProject">Team Project</a></li>
+                <li><Link href="/pages/TeamProject">Team Project</Link></li>
                 <li>Personal Project</li>
                 <li>Resome</li>
             </ul>
