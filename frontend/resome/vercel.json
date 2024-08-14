@@ -1,18 +1,3 @@
 {
-  "headers": [
-    {
-      "source": "/fonts/inter-var-latin.woff2",
-      "headers": [
-        {
-          "key": "Cache-Control"
-        
-        }
-      ]
-    },
-    {
-      "routes": [
-        { "src": "/[^.]+", "dest": "/", "status": 200 }
-      ]
-    }
-  ]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
