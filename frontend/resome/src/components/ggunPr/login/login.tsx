@@ -17,8 +17,8 @@ function OauthLogin(props: loginLogo) {
   return (
     <>
       <button className="w-[2rem] h-[2rem]">
-        <Image width={500}
-          height={500} className="w-[2rem] h-[2rem]" src={props.src} alt={props.title} />
+        <Image width={50}
+          height={50} className="w-[2rem] h-[2rem]" src={props.src} alt={props.title} />
       </button>
     </>
   )

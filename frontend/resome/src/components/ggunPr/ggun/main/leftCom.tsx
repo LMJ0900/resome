@@ -61,12 +61,12 @@ export default function LeftCom() {
                         height={500} src={isNext} alt="배너로고" />
                     <div className="">
                         <button className="absolute top-[21rem] right-[0.5rem] w-[2rem]" onClick={handleNext}>
-                            <Image width={500}
-                                height={500} src="" alt="버튼" />
+                            <Image width={100}
+                                height={100} src="/images/ggunPage/버튼오른쪽.png" alt="버튼" />
                         </button>
                         <button className="absolute top-[21rem] right-[4.9rem] w-[2rem]" onClick={handleBack}>
-                            <Image width={500}
-                                height={500} src="" alt="버튼" />
+                            <Image width={100}
+                                height={100} src="/images/ggunPage/버튼왼쪽.png" alt="버튼" />
                         </button>
                         <span className="bg-green-600 rounded-lg absolute top-[21.3rem] right-[3rem]">{count}/5</span>
                     </div>

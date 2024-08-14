@@ -14,23 +14,23 @@ export default function Sidebar() {
                     <ul className="flex justify-center flex-col sideIcon">
                         <li className="mt-[3rem]">
                             <div className="phoneInfo flex flex-col justify-center items-center">
-                                <Image className="" src="/images/phone24.png" width={500}
-                                    height={500} alt="핸드폰" />
+                                <Image className="" src="/images/phone24.png" width={100}
+                                    height={100} alt="핸드폰" />
                                 <h2 className="">010-8500-9170</h2>
                             </div>
                         </li>
                         <li className="mt-[3rem]">
                             <div className="emailInfo flex flex-col justify-center items-center">
-                                <Image className="" width={500}
-                                    height={500} src="/images/mail24.png" alt="핸드폰" />
+                                <Image className="" width={100}
+                                    height={100} src="/images/mail24.png" alt="핸드폰" />
                                 <h2 className="lg:text-xl md:text-base sm:text-sm">lmjcode0930@gmail.com</h2>
                                 <h2 className="lg:text-xl md:text-base sm:text-sm">lmjcode0930@naver.com</h2>
                             </div>
                         </li>
                         <li className="mt-[3rem]">
                             <div className="emailInfo flex flex-col justify-center items-center">
-                                <Image className="" width={500}
-                                    height={500} src="/images/git.png" alt="핸드폰" />
+                                <Image className="" width={100}
+                                    height={100} src="/images/git.png" alt="핸드폰" />
                                 <a href="https://github.com/LMJ0900" className="lg:text-xl md:text-base sm:text-sm">https://github.com/LMJ0900</a>
                             </div>
                         </li>

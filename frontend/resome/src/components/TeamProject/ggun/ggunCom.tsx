@@ -6,8 +6,8 @@ import Image from "next/image";
 export function GgunCom({ src, name, text }: any) {
     return (<>
         <div className="flex justify-center items-center">
-            <Image className="w-[40rem] h-[30rem]" width={500}
-                height={500} src={src} alt="로고" />
+            <Image className="w-[40rem] h-[30rem]" width={1000}
+                height={1000} src={src} alt="로고" />
             <div className="ml-[4rem] w-[20rem]">
                 <h2 className="font-semibold text-[2rem]">{name}</h2>
                 <h2>설명 : {text}</h2>
@@ -42,8 +42,8 @@ export default function Ggun() {
                 <a href="ggun/login" className="font-bold text-[2rem]">ggun으로 이동</a>
             </div>
             {page === "page" ?
-                <GgunpageCom /> : page === "Api" ? <Image className="w-[800rem] h-[70rem]" width={500}
-                    height={500} src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
+                <GgunpageCom /> : page === "Api" ? <Image className="w-[800rem] h-[70rem]" width={3000}
+                    height={1000} src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
 
         </>
     )
