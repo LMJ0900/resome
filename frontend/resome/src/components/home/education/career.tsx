@@ -17,6 +17,6 @@ export function CareerCom({ src ,name, date, text }: any) {
 
 export default function Career() {
     return (<>
-        {CareerData.map((item) => <CareerCom date={item.date} text={item.text} name={item.name} src={item.src}></CareerCom>)}
+        {CareerData.map((item) => <CareerCom key={item.id} date={item.date} text={item.text} name={item.name} src={item.src}></CareerCom>)}
     </>)
 }

@@ -17,7 +17,7 @@ export function GgunCom({ src, name, text }: any) {
 export function GgunpageCom() {
     return (<>
        <div className="flex justify-center flex-col gap-[2rem]">
-                    {ggunData.map((item) => <GgunCom name={item.name} text={item.text} src={item.src}></GgunCom>)}
+                    {ggunData.map((item) => <GgunCom key={item.id} name={item.name} text={item.text} src={item.src}></GgunCom>)}
                  </div>
 
     </>)

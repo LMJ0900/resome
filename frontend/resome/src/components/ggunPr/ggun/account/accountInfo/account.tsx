@@ -5,12 +5,12 @@ import { AccoountListType } from "../types/account"
 
 function AccList(props: AccoountListType) {
     return (<>
-        <tbody className="" >
+        <tr key={props.key} className="" >
             <td className="text-center">{props.name}</td>
             <td className="text-center">{props.accountNumber}</td>
             <td className="text-center">{props.investDate}</td>
             <td className="text-center">{props.rateOfReturn}</td>
-        </tbody>
+        </tr>
     </>)
 }
 
@@ -33,7 +33,7 @@ export default function Account() {
                 <th className="w-[30rem] ">투자기간</th>
                 <th className="w-[10rem] ">수익률</th>
             </tr>
-            {Accountlist.map((Item) => <AccList name={Item.name} accountNumber={Item.accountNumber} investDate={Item.investDate} rateOfReturn={Item.rateOfReturn}></AccList>)}
+            {Accountlist.map((Item) => <AccList key={Item.id} name={Item.name} accountNumber={Item.accountNumber} investDate={Item.investDate} rateOfReturn={Item.rateOfReturn}></AccList>)}
         </table>
 
     </>

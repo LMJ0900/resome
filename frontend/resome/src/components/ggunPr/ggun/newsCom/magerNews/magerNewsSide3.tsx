@@ -5,7 +5,7 @@ import MajorNewsSideCom from "./magerNewsSideCom";
 export default function MajorNewsSide3() {
     return (<>
         <div className=" flex flex-col mr-[5rem]">
-        {MajorSideCom3.map((item)=><MajorNewsSideCom back={item.back} text={item.text} url={item.url} ></MajorNewsSideCom>)}  
+        {MajorSideCom3.map((item)=><MajorNewsSideCom key={item.id} back={item.back} text={item.text} url={item.url} ></MajorNewsSideCom>)}  
         </div>
 
     </>)

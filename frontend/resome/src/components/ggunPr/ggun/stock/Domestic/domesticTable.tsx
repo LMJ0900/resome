@@ -12,7 +12,7 @@ export default function DomesticTable() {
                 <th className="w-[10rem]" scope="col">시가총액</th>
                 <th className="w-[10rem] text-end" scope="col">거래량</th>
             </tr>
-            {domesticStock.map((item) => <StockTable url={item.url} name={item.name} price={item.price} upAndDown={item.upAndDown} capitalization={item.capitalization} trading={item.trading}> </StockTable>)}
+            {domesticStock.map((item) => <StockTable key={item.id} url={item.url} name={item.name} price={item.price} upAndDown={item.upAndDown} capitalization={item.capitalization} trading={item.trading}> </StockTable>)}
         </table>
 
     </>)

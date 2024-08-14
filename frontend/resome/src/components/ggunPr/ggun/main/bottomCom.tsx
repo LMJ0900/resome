@@ -1,6 +1,6 @@
 import { bottomComData } from "./data/main"
 import { botcom } from "./types/main"
-
+import Image from 'next/image';
 
 function Botcom(props: botcom) {
     return (<>
@@ -16,7 +16,7 @@ export default function BottomCom() {
     return (
         <>
             <div className=" w-[50vw] h-[20vh] flex flex-row">
-            {bottomComData.map((bottomComItem) => <Botcom title={bottomComItem.title} src={bottomComItem.src}></Botcom>)}
+            {bottomComData.map((bottomComItem) => <Botcom key={bottomComItem.id} title={bottomComItem.title} src={bottomComItem.src}></Botcom>)}
             </div>
         </>
     )

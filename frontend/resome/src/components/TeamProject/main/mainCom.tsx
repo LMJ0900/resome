@@ -1,5 +1,5 @@
 import { protfiloData } from "../data/protfiloData"
-
+import Image from 'next/image';
 export function MainCom({ src, name, text, stack }: any) {
     return (<>
             <div className="flex justify-center items-center">
@@ -17,7 +17,7 @@ export default function Main() {
     return (
         <>
             <div className="flex justify-center flex-row gap-[2rem]">
-            {protfiloData.map((item) => <MainCom name={item.name} text={item.text} stack={item.stack} src={item.src}></MainCom>)}
+            {protfiloData.map((item) => <MainCom key={item.id} name={item.name} text={item.text} stack={item.stack} src={item.src}></MainCom>)}
             </div>
         </>
     )

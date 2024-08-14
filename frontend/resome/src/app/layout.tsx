@@ -10,9 +10,9 @@ import { useSelector } from "react-redux";
 import Header from "@/components/common/module/header";
 
 
-const ReduxProvider = dynamic(() => import("@/redux/redux-provider"), {
-  ssr: false
-});
+// const ReduxProvider = dynamic(() => import("@/redux/redux-provider"), {
+//   ssr: false
+// });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,10 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ReduxProvider > 
+        {/* <ReduxProvider >  */}
         {parseCookies().message === 'SUCCESS' && <Header/>}
           {children}
-          </ReduxProvider>
+          {/* </ReduxProvider> */}
       </body>
     </html>
   );

@@ -21,16 +21,16 @@ function handleChange(){
     <HeadTitleCom title={"지금 사람들이 많이 보는 뉴스"}></HeadTitleCom>
     </div>
     <div className="flex flex-row gap-[3rem] mr-[4.8rem]">
-    {HotNewsMainCom.map((item)=><HotnewsCom url={item.url} text={item.text} src={item.back}></HotnewsCom>)}
+    {HotNewsMainCom.map((item)=><HotnewsCom key={item.id} url={item.url} text={item.text} src={item.back}></HotnewsCom>)}
     </div>
     <div className="flex flex-row gap-[3rem] mr-[4.8rem]">
-    {HotNewsMainCom2.map((item)=><HotnewsCom url={item.url} text={item.text} src={item.back}></HotnewsCom>)}
+    {HotNewsMainCom2.map((item)=><HotnewsCom key={item.id} url={item.url} text={item.text} src={item.back}></HotnewsCom>)}
     </div>
     <div className="flex flex-col ml-[5rem]">
-   {HotNewsSubCom.map((item)=><OneRowTwoCom src={item.src} src2={item.src2} url={item.url} url2={item.url2} text={item.text} text2={item.text2}></OneRowTwoCom>)}
+   {HotNewsSubCom.map((item)=><OneRowTwoCom key={item.id} src={item.src} src2={item.src2} url={item.url} url2={item.url2} text={item.text} text2={item.text2}></OneRowTwoCom>)}
     <hr className="border-3 border-purple-400" />
     {affterPage===true ? <button onClick={handleChange} className="flex justify-center">더보기</button> : <div className="flex flex-col">
-    {HotNewsSubCom2.map((item)=><OneRowTwoCom src={item.src} src2={item.src2} url={item.url} url2={item.url2} text={item.text} text2={item.text2}></OneRowTwoCom>)}
+    {HotNewsSubCom2.map((item)=><OneRowTwoCom key={item.id} src={item.src} src2={item.src2} url={item.url} url2={item.url2} text={item.text} text2={item.text2}></OneRowTwoCom>)}
     </div>}
     </div>
     </>)

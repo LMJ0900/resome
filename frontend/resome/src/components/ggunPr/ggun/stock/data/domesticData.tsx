@@ -1,5 +1,6 @@
 export const domesticStock=[
     {
+        id : 0,
         url : "https://tossinvest.com/stocks/A005930/order",
         name : "삼성전자",
         price : 82900,
@@ -8,6 +9,7 @@ export const domesticStock=[
         trading : 15766389
     },
     {
+        id : 1,
         url : "https://tossinvest.com/stocks/A000660/order",
         name : "sk하이닉스",
         price : 211500,
@@ -16,6 +18,7 @@ export const domesticStock=[
         trading : 5976519
     },
     {
+        id : 2,
         url : "https://tossinvest.com/stocks/A373220/order",
         name : "LG에너지솔루션",
         price : 211000,
@@ -24,6 +27,7 @@ export const domesticStock=[
         trading : 152649
     },
     {
+        id : 3,
         url : "https://tossinvest.com/stocks/A005380/order",
         name : "현대차",
         price : 259000,
@@ -32,6 +36,7 @@ export const domesticStock=[
         trading : 152694
     },
     {
+        id : 4,
         url : "https://tossinvest.com/stocks/A207940/order",
         name : "삼성바이오로직스",
         price : 884000,

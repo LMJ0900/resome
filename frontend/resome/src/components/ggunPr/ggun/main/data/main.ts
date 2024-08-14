@@ -51,10 +51,12 @@ export const rightBotTitle = [
 ]
 export const bottomComData = [
     {
+        id : 0,
         title: "코스닥",
         src: "https://png.pngtree.com/element_our/20190602/ourmid/pngtree-ppt-data-line-chart-illustration-image_1410712.jpg"
     },
     {
+        id : 1,
         title: "코스피",
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzlotwkESUKuccngBYsfrGflOLAQUDOItNw&s"
     }

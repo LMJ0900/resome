@@ -16,6 +16,6 @@ export function CertificateCom({ src ,name, date, text }: any) {
 
 export default function Certificate() {
     return (<>
-        {CartificateData.map((item) => <CertificateCom date={item.date} text={item.text} name={item.name} src={item.src}></CertificateCom>)}
+        {CartificateData.map((item) => <CertificateCom key={item.id} date={item.date} text={item.text} name={item.name} src={item.src}></CertificateCom>)}
     </>)
 }

@@ -1,5 +1,6 @@
 export const allMagerNewsData = [
   {
+    id : 0,
     back: "/images/ggunPage/모든주요토스1.jpg",
     title: `[굿모닝 증시]코스피, 안도랠리 전망…기술적 반등 관측`,
     text: `간밤 미국 증시가 트럼프발 리스크 감소로 상승 마감한 가운데 23일 코스피 역시 안도랠리를 펼칠 것으로 관측됐다.

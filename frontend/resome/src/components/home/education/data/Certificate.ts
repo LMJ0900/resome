@@ -1,5 +1,6 @@
 export const CartificateData = [
     {
+      id : 0,
       src: "/images/edu24.png",
       date: "2024-2-14 ~ 2024-8-20",
       name: "사회조사분석사 2급",
