@@ -6,7 +6,7 @@ type StockType = {
     capitalization: number;
     trading: number;
 }
-
+import Image from "next/image";
 
 export default function StockTable({ url, name, price, upAndDown, capitalization, trading }: any) {
 
@@ -18,7 +18,8 @@ export default function StockTable({ url, name, price, upAndDown, capitalization
         <tr onClick={handleClick} className="hover:bg-gray-300">
             <td>
                 <button className="w-[1rem] h-[1rem]">
-                    <img className="w-[1rem] h-[1rem]" src="/images/하트로고.png" alt="" />
+                    <Image width={500}
+                        height={500} className="w-[1rem] h-[1rem]" src="/images/하트로고.png" alt="" />
                 </button>
                 {name}
             </td>

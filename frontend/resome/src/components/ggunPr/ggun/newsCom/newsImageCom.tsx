@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 export type NewImageCom = {
     width: string;
@@ -7,10 +7,11 @@ export type NewImageCom = {
 }
 
 
-export default function NewImageCom({ width, high, back}: NewImageCom) {
+export default function NewImageCom({ width, high, back }: NewImageCom) {
     return (<>
         <div className={`overflow-hidden rounded-[16px]`}>
-            <img className={`${width} ${high} rounded-[16px]  hover:animate-ImgHover`} src={`${back}`} alt="안나옴" />
+            <Image width={500}
+                height={500} className={`${width} ${high}  rounded-[16px]  hover:animate-ImgHover`} src={`${back}`} alt="안나옴" />
         </div>
     </>
     )

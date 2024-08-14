@@ -106,7 +106,7 @@ export const MajorCom1 = [
   {
     id : 1,
     back:
-      "https://cphoto.asiae.co.kr/listimg_link.php?idx=2&no=2024071808001955597_1721257219.jpg",
+      "",
     text: "[특징주]우진, 24조 체코 원자력발전소 수주 ↑ 한국 표준형 원자력 계측기 독점 공급 부각",
   },
   {

@@ -2,11 +2,12 @@
 
 import { useState } from "react"
 import { ggunData } from "../data/ggunData"
-
+import Image from "next/image";
 export function GgunCom({ src, name, text }: any) {
     return (<>
         <div className="flex justify-center items-center">
-            <img className="w-[40rem] h-[30rem]" src={src} alt="로고" />
+            <Image className="w-[40rem] h-[30rem]" width={500}
+                height={500} src={src} alt="로고" />
             <div className="ml-[4rem] w-[20rem]">
                 <h2 className="font-semibold text-[2rem]">{name}</h2>
                 <h2>설명 : {text}</h2>
@@ -16,9 +17,9 @@ export function GgunCom({ src, name, text }: any) {
 }
 export function GgunpageCom() {
     return (<>
-       <div className="flex justify-center flex-col gap-[2rem]">
-                    {ggunData.map((item) => <GgunCom key={item.id} name={item.name} text={item.text} src={item.src}></GgunCom>)}
-                 </div>
+        <div className="flex justify-center flex-col gap-[2rem]">
+            {ggunData.map((item) => <GgunCom key={item.id} name={item.name} text={item.text} src={item.src}></GgunCom>)}
+        </div>
 
     </>)
 }
@@ -41,7 +42,8 @@ export default function Ggun() {
                 <a href="ggun/login" className="font-bold text-[2rem]">ggun으로 이동</a>
             </div>
             {page === "page" ?
-                <GgunpageCom/> : page === "Api" ? <img className="w-[800rem] h-[70rem]" src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
+                <GgunpageCom /> : page === "Api" ? <Image className="w-[800rem] h-[70rem]" width={500}
+                    height={500} src="/images/ggun/api명세서.png" alt="" /> : <h2>확인용</h2>}
 
         </>
     )

@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { LoginLogo } from "./data/login";
 import { loginLogo } from "./types/login";
-
+import Image from "next/image";
 
 
 
@@ -17,7 +17,8 @@ function OauthLogin(props: loginLogo) {
   return (
     <>
       <button className="w-[2rem] h-[2rem]">
-        <img className="w-[2rem] h-[2rem]" src={props.src} alt={props.title} />
+        <Image width={500}
+          height={500} className="w-[2rem] h-[2rem]" src={props.src} alt={props.title} />
       </button>
     </>
   )
@@ -115,7 +116,7 @@ export default function LoginBar() {
       </pre>)} */}
       <input className="border-b-2 bg-inherit w-[16rem] h-[3rem]" type="password" name="id" id="id" placeholder="password" ></input>
       <div className="mt-12 w-[16rem] h-[4rem] flex justify-center items-center gap-7">
-        {LoginLogo.map((loginLogo)=> <OauthLogin key={loginLogo.title} {...loginLogo}></OauthLogin>)}
+        {LoginLogo.map((loginLogo) => <OauthLogin key={loginLogo.title} {...loginLogo}></OauthLogin>)}
       </div>
       <button type="submit" className="mt-12 border-white border-2 rounded-[20px] w-[7rem] h-[3rem] text-white font-semibold">Login</button>
     </div>

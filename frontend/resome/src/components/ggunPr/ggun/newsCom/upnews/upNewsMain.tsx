@@ -1,5 +1,5 @@
 import NewImageCom from "../newsImageCom";
-
+import Image from "next/image";
 export default function UpNewsMain({ back, logo, text }: any) {
     return (<>
         <div className="flex flex-col">
@@ -7,7 +7,8 @@ export default function UpNewsMain({ back, logo, text }: any) {
                 <NewImageCom width="w-[25rem]" high="h-[15rem]" back={back}></NewImageCom>
             </div>
             <a className="w-[25rem] h-[4rem]" href="">
-                <img src={logo} alt="이미지오류" />
+                <Image width={500}
+                    height={500} src={logo} alt="이미지오류" />
             </a>
             <h2>{text}</h2>
         </div>
