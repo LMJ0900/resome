@@ -4,7 +4,7 @@ export default function Sidebar() {
     return (<>
         <div className="flex justify-center text-blue-400 bg-blue-300 w-[22rem] h-[60rem] fixed">
             <div className="flex items-center flex-col">
-                <div className="profileIcon bg-white rounded-full w-[10rem] h-[10rem]">
+                <div className="profileIcon bg-white rounded-full w-[10rem] h-[10rem] mt-[1rem]">
                     <Image src="" alt="" />
                 </div>
                 <h2 className="flex justify-center mt-[3rem] text-2xl font-semibold md:text-3xl lg:text-5xl">Lee, Minjae</h2>

@@ -2,7 +2,7 @@ import { protfiloData } from "../data/protfiloData"
 import Image from 'next/image';
 export function MainCom({ src, name, text, stack }: any) {
     return (<>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-[3rem] mt-[3rem]">
             <Image width={500}
                 height={500} className="w-[15rem] h-[15rem]" src={src} alt="로고" />
             <div className="w-[20rem]">

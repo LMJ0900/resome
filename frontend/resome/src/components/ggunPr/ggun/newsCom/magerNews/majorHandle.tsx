@@ -1,10 +1,10 @@
 import { useState } from "react"
 import Image from "next/image";
-export function HandleICON({ num }: any) {
+export function HandleICON({ num, wrap }: any) {
 
 
     return (<>
-        <button className={`w-[2rem] h-[2rem] rounded-[100%] bg-white hover:bg-gray-100 flex justify-center items-center`}>
+        <button onClick={wrap} className={`w-[2rem] h-[2rem] rounded-[100%] bg-white focus:bg-red-100 hover:bg-gray-100 flex justify-center items-center`}>
             <h2 className="text-black">{num}</h2>
         </button>
     </>)
@@ -21,13 +21,9 @@ export default function MajorHandle({ handleNext, onwrap3, onwrap2, onwrap1 }: a
 
     return (<>
         <div className="flex flex-row">
-            <HandleICON num={1} />
-            <button onClick={onwrap2} className="w-[2rem] h-[2rem] rounded-[100%] bg-white hover:bg-gray-100 flex justify-center items-center">
-                <h2 className="text-black">2</h2>
-            </button>
-            <button onClick={onwrap3} className="w-[2rem] h-[2rem] rounded-[100%] bg-white hover:bg-gray-100 flex justify-center items-center">
-                <h2 className="text-black">3</h2>
-            </button>
+            <HandleICON wrap={onwrap1} num={1} />
+            <HandleICON wrap={onwrap2} num={2} />
+            <HandleICON wrap={onwrap3} num={3} />
             <HandleICON num={<Image width={100}
                 height={100} src="/images/ggunPage/버튼왼쪽.png" alt=""></Image>}></HandleICON>
             <HandleICON num={<Image width={100}
