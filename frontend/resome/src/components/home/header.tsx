@@ -10,8 +10,8 @@ export default function Header() {
             </h2> </a>
             <ul className="ml-[5vw] text-[1.5vw] font-semibold flex gap-[3vw]">
                 <li><Link href="/pages/TeamProject">Team Project</Link></li>
-                <li>Personal Project</li>
-                <li>Resome</li>
+                <li><Link href="/pages/PersonalProject">Personal Project</Link></li>
+                <li><Link href="/pages/Resome">Resome</Link></li>
             </ul>
         </div>
     </>)
