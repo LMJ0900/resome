@@ -11,22 +11,22 @@ export const centerTitle = [
 ]
 export const leftBotTitle = [
     {
-        title: "처음에"
+        title: "계좌개설"
     },
     {
-        title: "메뉴"
+        title: "계좌수정"
     },
     {
-        title: "머가들어가"
+        title: "Hot종목"
     },
     {
-        title: "어떤거를"
+        title: "국내뉴스"
     },
     {
-        title: "넣을까요"
+        title: "해외뉴스"
     },
     {
-        title: "쩝쩝쩝"
+        title: "투자설정"
     },
 ]
 export const rightBotTitle = [

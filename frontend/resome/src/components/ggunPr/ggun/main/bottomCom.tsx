@@ -1,24 +1,28 @@
-import { bottomComData } from "./data/main"
-import { botcom } from "./types/main"
-import Image from 'next/image';
+'use client'
 
-function Botcom(props: botcom) {
-    return (<>
-        <div className=" w-[25vw] h-[20vh]">
-            <div className="flex justify-center">
-                <Image className="w-[22.5vw] h-[20vh]" src={props.src} width={500}
-                    height={500} alt={props.title} />
-            </div>
-        </div>
-    </>)
-}
+import { useState } from "react";
+import BarChart from "./com/BarChart";
+import { } from 'chart.js/auto';
+import LineChart from "./com/LineChart";
+import { NasdaqData } from "./data/Nasdaq";
 
-export default function BottomCom() {
+export default function KospiCom() {
+
+    const [nasdaqData, setNasdaqData] = useState({
+        labels: NasdaqData.map((data) => data.year),
+        datasets: [{
+            label: "Nasdaq",
+            data: NasdaqData.map((data) => data.result),
+            backgroundColor: ["green"],
+        }],
+        borderColor: "black",
+        borderWidth: 2,
+
+    })
     return (
-        <>
-            <div className=" w-[50vw] h-[20vh] flex flex-row">
-                {bottomComData.map((bottomComItem) => <Botcom key={bottomComItem.id} title={bottomComItem.title} src={bottomComItem.src}></Botcom>)}
-            </div>
-        </>
+        <div className="flex w-[25vw] h-[30vh] flex-row">
+            <LineChart chartData={nasdaqData}></LineChart>
+            <LineChart chartData={nasdaqData}></LineChart>
+        </div>
     )
 }
